@@ -1,2 +1,1 @@
-# Into-Terraform
-Introduction to Terraform
+# Introduction to Terraform

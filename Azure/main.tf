@@ -14,7 +14,7 @@ subscription_id = var.subscription_id
 
 resource "azurerm_resource_group" "main" {
   name     = "${var.prefix}-resources"
-  location = "Norway East"
+  location = "northeurope"
 }
 
 resource "azurerm_virtual_network" "main" {
@@ -70,9 +70,9 @@ resource "azurerm_virtual_machine" "main" {
     managed_disk_type = "Standard_LRS"
   }
   os_profile {
-    computer_name  = "hostname"
-    admin_username = var.admin
-    admin_password = var.password
+    computer_name  = "Computas"
+    admin_username = var.admin_username
+    admin_password = var.admin_password
   }
   os_profile_linux_config {
     disable_password_authentication = false

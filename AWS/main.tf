@@ -7,4 +7,11 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = "ami-0de53d8956e8dcf80"
   instance_type = "t2.micro"
+
+  tags = {
+        Project = "Computasdagen2020"
+        Environment = "test"
+        Provisioner = "Terraform"
+    }
 }
+
