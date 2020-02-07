@@ -19,7 +19,7 @@ variable "admin_username" {
     description = "Specifies the name of the local administrator account."
 }
 
-variable "password" {
+variable "admin_password" {
     description = "The password associated with the local administrator account."
 }
 
